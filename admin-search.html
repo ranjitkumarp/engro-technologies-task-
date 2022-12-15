@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Task </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+<div class="header">
+<div class="admin-logo"> <img src="img/logo.PNG"></div>
+<div class="admin-search">
+<div class="search"> 
+	<div class="search-div">
+	<i class="fa fa-search search-icon"></i>
+	<input type="text" class="search-input" placeholder="Search.." name="search">
+	<i class="fa fa-sliders filter-icon" aria-hidden="true"></i>
+  </div></div>
+<div class="profile-icon"> <img class="profile-img" src="img/user-icon.png"></div>	
+</div>
+</div>
+<div class="wrapper">
+<div class="menu-left">
+	<!-- Sidebar -->
+	<nav class="nav-bar">
+		<ul class="collapse" id="homeSubmenu">
+			<li>
+				<a href="#"> <i class="fa fa-envelope"></i>
+					Zee Drive</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-envelope"></i> Shared with you</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-envelope"></i> Trash</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+	<!-- Page Content -->
+	<div class="div-content">
+				<div class="wraper-filterfull">
+                    <h2 class="title"> Search Result</h2>
+				<div class="filter">
+                    <ul class="ul-filter">
+                        <li><button type="button" class="white-btn" id="sidebarCollapse"><i class="fa fa-bars" aria-hidden="true"></i></button></li>
+                        <li><button id="location-btn" class="white-btn"> Location </button>
+                            <div class="filter-div location-div" style="display: none;">
+                                 <ul>
+                                <li><a href="#">Add Files</a></li>
+                                <li><a href="#"> Add Folder</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                        <li><button id="filetype-btn" class="white-btn">File Type</button>
+                            <div class="filter-div filetype-div" style="display: none;">
+                                <ul>
+                                <li><a href="#" id="div_pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</a></li>
+                                <li><a href="#" id="div_png"><i class="fa fa-picture-o" aria-hidden="true"></i>PNG</a></li>
+                                <li><a href="#" id="div_psd"><i class="fa fa-picture-o" aria-hidden="true"></i>PSD</a></li>
+                                <li><a href="#" id="div_ai"><i class="fa fa-picture-o" aria-hidden="true"></i>AI</a></li>
+                                <li><a href="#" id="div_svg"><i class="fa fa-picture-o" aria-hidden="true"></i>SVG</a></li>
+                            </ul>
+                        </div>
+                     </li>
+                        <li><button id="people-btn" class="white-btn">People</button> 
+                            <div class="filter-div people-div" style="display: none;">
+                                <div class="filter-title">
+                                  <div class="people-search">
+                                    <i class="fa fa-search filtersearch-icon"></i>
+                                    <input type="text" class="filtersearch-input" id="div_search" placeholder="Search.." name="search">
+                                </div>
+                                
+                            </div>
+                                <ul>
+                                    <li><a href="#">Shilpa</a></li>
+                                <li><a href="#">Neha (Me)<span>neha.12@gmail.com</span></a></li>
+                                <li><a href="#">Barath(user)<span>barath.123@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                        <li><button id="last-btn" class="white-btn">Last Modified</button> 
+                            <div class="filter-div last-div" style="display: none;">
+                                
+                                <ul>
+                                <li><a href="#">Today</a></li>
+                                <li><a href="#"> Last 7 days</a></li>
+                                <li><a href="#"> Last 30 days</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                        </ul>
+				
+		</div>
+				
+				</div>
+				<div class="card-wraper">
+					
+					<div class="card-li">
+				<ul class="files-li" id="divList">
+                    <li><div class="card"> <img src="img/folder.png"> 
+						<span> <i class="fa fa-folder" aria-hidden="true"></i>Shilpa</span></div></li>
+                    <li><div class="card"> <img src="img/folder.png"> 
+                        <span> <i class="fa fa-folder" aria-hidden="true"></i>Zee Drive</span></div></li>
+                    <li><div class="card"> <img src="img/folder.png"> 
+                            <span> <i class="fa fa-folder" aria-hidden="true"></i>Engro- 234</span></div></li>
+					<li class="divpdf"><div class="card"> <img src="img/no-image.png"> 
+						<span> <i class="fa fa-file-image-o" aria-hidden="true"></i>image-1.pdf file</span></div></li>
+					<li class="divpdf"><div class="card">  <img src="img/no-image.png"> 
+						<span> <i class="fa fa-file-image-o" aria-hidden="true"></i>image-2.pdf file</span> </div></li>
+					<li class="divpdf"><div class="card">  <img src="img/no-image.png"> 
+						<span> <i class="fa fa-file-image-o" aria-hidden="true"></i>image-3.pdf file</span></div></li>
+					<li class="divpsd"><div class="card">  <img src="img/no-image.png"> <span><i class="fa fa-file-image-o" aria-hidden="true"></i>image-1.psd file</span></div></li>
+					<li class="divpng"><div class="card">  <img src="img/no-image.png"> <span><i class="fa fa-file-image-o" aria-hidden="true"></i>image-1.png file</span></div></li>
+					<li class="divai"><div class="card">  <img src="img/no-image.png"> <span><i class="fa fa-file-image-o" aria-hidden="true"></i>image-1.ai file</span></div></li>
+                    <li class="divai"><div class="card">  <img src="img/no-image.png"> <span><i class="fa fa-file-image-o" aria-hidden="true"></i>image-1.ai file</span></div></li>
+                    <li class="divsvg"><div class="card">  <img src="img/no-image.png"> <span><i class="fa fa-file-image-o" aria-hidden="true"></i>image-1.svg file</span></div></li>
+                    <li class="divsvg"><div class="card">  <img src="img/no-image.png"> <span><i class="fa fa-file-image-o" aria-hidden="true"></i>image-1.svg file</span></div></li>
+				</ul>
+				</div>
+	</div>
+</div>
+</div>  
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+		$("#last-btn").click(function(){
+    $(".last-div").show();
+    $(".location-div,.filetype-div,.people-div").hide();
+  });
+  $("#location-btn").click(function(){
+    $(".location-div").show();
+    $(".last-div,.filetype-div,.people-div").hide();
+  });
+  $("#filetype-btn").click(function(){
+    $(".filetype-div").show();
+    $(".last-div,.location-div,.people-div").hide();
+  });
+  $("#people-btn").click(function(){
+    $(".people-div").show();
+    $(".last-div,.location-div,.filetype-div").hide();
+  });
+  $("#div_pdf").click(function(){
+    $(".divpdf").show();
+    $(".divsvg,.divai,.divpsd,divpng").hide();
+  });
+  $("#div_png").click(function(){
+    $(".divpng").show();
+    $(".divsvg,.divai,.divpdf,divpsd").hide();
+  });
+  $("#div_svg").click(function(){
+    $(".divsvg").show();
+    $(".divpng,.divai,.divpdf,divpsd").hide();
+  });
+  $("#div_ai").click(function(){
+    $(".divai").show();
+    $(".divpng,.divsvg,.divpdf,divpsd").hide();
+  });
+  $("#div_psd").click(function(){
+    $(".divpsd").show();
+    $(".divpng,.divsvg,.divpdf,divai").hide();
+  });
+$('#sidebarCollapse').on('click', function () {
+    $('.menu-left').toggleClass('active');
+});
+
+$("#div_search").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#divList li").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+
+});
+</script>
+    

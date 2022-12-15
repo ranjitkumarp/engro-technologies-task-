@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Task </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+</head>
+<body>
+<div class="header">
+<div class="admin-logo"> <img src="img/logo.PNG"></div>
+<div class="admin-search">
+<div class="search"> 
+	<div class="search-div">
+	<i class="fa fa-search search-icon"></i>
+	<input type="text" class="search-input" placeholder="Search.." name="search">
+	<i class="fa fa-sliders filter-icon" ></i>
+  </div></div>
+<div class="profile-icon"> <img class="profile-img" src="img/user-icon.png"></div>	
+</div>
+</div>
+<div class="wrapper">
+<div class="menu-left">
+	<!-- Sidebar -->
+	<nav class="nav-bar">
+		<ul class="collapse" id="homeSubmenu">
+			<li>
+				<a href="#"> <i class="fa fa-envelope"></i>
+					Zee Drive</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-envelope"></i> Shared with you</a>
+			</li>
+			<li>
+				<a href="#"><i class="fa fa-envelope"></i> Trash</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+	<!-- Page Content -->
+	
+	<div class="div-content">
+		<div class="wraper-filter">
+			<div class="filter">
+				<button type="button" class="white-btn" id="sidebarCollapse"><i class="fa fa-bars" ></i></button>
+				<button id="create-btn" class="white-btn"><i class="fa fa-plus" ></i> Create <i class="fa fa-angle-right" ></i></button>
+			<div class="filter-div" style="display: none;">
+				<div class="filter-title"> Create New</div>
+				<ul>
+				<li><a href="#">Add Files</a></li>
+				<li><a href="#"> Add Folder</a></li>
+			</ul>
+		</div>
+	</div>
+			<div class="filter textright"> <ul class="filter-link">
+                <li><i class="fa fa-eye" ></i> Preview</li>
+				<li><i class="fa fa-trash" ></i> Delete</li>
+                <li><i class="fa fa-share-alt" ></i> Share</li>
+				 <li><i class="fa fa-link" ></i> Copy link</li>
+				 <li><i class="fa fa-download" ></i> Download</li>
+				 <li><i class="fa fa-ellipsis-v" ></i>
+				 </li>
+				</ul></div>
+			</div>
+				<div class="card-wraper">
+					<ul class="bread-crumbs"> 
+                        <li> Zee Drive <i class="fa fa-angle-right"></i></li>
+                        <li>Engro <i class="fa fa-angle-right" ></i></li>
+                        <li>Shilpa <i class="fa fa-angle-right" ></i></li>
+                        <li>Image</li>
+                    </ul>
+					<div class="card-li">
+				<ul class="files-li">
+					<li><div class="card"> <img src="img/no-image.png"> 
+						<span> <i class="fa fa-file-image-o" ></i>image-1.pdf file</span></div></li>
+					<li><div class="card">  <img src="img/no-image.png"> 
+						<span> <i class="fa fa-file-image-o" ></i>image-1.pdf file</span> </div></li>
+					<li><div class="card">  <img src="img/no-image.png"> 
+						<span> <i class="fa fa-file-image-o" ></i>image-1.pdf file</span></div></li>
+					<li><div class="card">  <img src="img/no-image.png"> <span><i class="fa fa-file-image-o" ></i>image-1.pdf file</span></div></li>
+					<li><div class="card">  <img src="img/no-image.png"> <span><i class="fa fa-file-image-o" ></i>image-1.pdf file</span></div></li>
+					<li><div class="card">  <img src="img/no-image.png"> <span><i class="fa fa-file-image-o" ></i>image-1.pdf file</span></div></li>
+				</ul>
+				</div>
+				
+					
+	</div>
+</div>
+</div>  
+</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+		$("#last-btn").click(function(){
+    $(".last-div").show();
+    $(".location-div,.filetype-div,.people-div").hide();
+  });
+  $("#location-btn").click(function(){
+    $(".location-div").show();
+    $(".last-div,.filetype-div,.people-div").hide();
+  });
+  $("#filetype-btn").click(function(){
+    $(".filetype-div").show();
+    $(".last-div,.location-div,.people-div").hide();
+  });
+  $("#people-btn").click(function(){
+    $(".people-div").show();
+    $(".last-div,.location-div,.filetype-div").hide();
+  });
+  
+$('#sidebarCollapse').on('click', function () {
+    $('.menu-left').toggleClass('active');
+});
+
+});
+</script>

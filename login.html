@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Task </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="login-body">
+	<div class="login-div login-orderone">
+		<div class="login-box">
+<div class=login-formdiv>
+<div class="login-logo">
+	<img src="img/logo.PNG">
+</div>
+<div class="login-form">
+	<form>
+		<div class="container">
+			<div class="form-group">
+			<label for="Email">Email</label>
+			<input type="text" class="form-control"  required>
+		</div>
+		<div class="form-group">
+			<label for="psw">Password</label>
+			<input type="password" class="form-control" required>
+		</div>
+		<div class="form-group">
+			<label>
+			  <input type="checkbox" checked="checked" name="remember"> Remember me
+			</label>
+			</div>
+			<button type="button" id="myButton" class="btn">Submit</button>
+		  </div>
+		
+	</form>
+</div>
+</div>
+		</div>
+
+	</div>
+	<div class="login-div login-ordertwo">
+		<div class="login-box black-bg">
+			<div class="login-img">
+				<img src="img/login-img.png">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<style>
+	body{
+		background: #fff;
+	}
+</style>
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "admin.html";
+    };
+</script>
